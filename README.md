@@ -9,3 +9,20 @@ The reuse of a previously trained model on a new problem is known as transfer le
 </div>
 
  ## Results
+ 
+ We trained the VGG model for our dataset by changing the last fully connected layer, and here is the results:
+ 
+ <div align = "center">
+<img title = "VGG16 Architecture" alt = "Alt text" src = "results.jpg" width = 800 height = 350>
+</div>
+
+When looking at the graphs, it seems that the model can predict an image in the Fruits-360 dataset with around 85%  accuracy. Also, a small overfitting problem has occurred, but since the model has already been trained with the ImageNet dataset and we trained only the last layer, it is quite normal.
+
+To see the code and get more information about the model, you can examine "transfer_learning_vgg16.ipynb"
+
+## Sources
+
+* **Dataset**: https://www.kaggle.com/datasets/moltean/fruits
+* **Useful Links**:
+  * https://www.learndatasci.com/tutorials/hands-on-transfer-learning-keras/
+  * https://medium.com/@mygreatlearning/everything-you-need-to-know-about-vgg16-7315defb5918
